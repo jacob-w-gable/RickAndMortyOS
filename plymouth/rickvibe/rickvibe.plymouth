@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=rickvibe
+Description=GIF Plymouth viewer
+Comment=Generated GIF Plymouth theme
+ModuleName=script
+[script]
+ImageDir=/usr/share/plymouth/themes/rickvibe
+ScriptFile=/usr/share/plymouth/themes/rickvibe/rickvibe.script
