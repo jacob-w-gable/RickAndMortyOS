@@ -40,5 +40,5 @@ cp conky.conf ~/.config/conky/
 cp /etc/default/grub ~/grub.bak
 sed -i '/GRUB_BACKGROUND/s/GRUB_BACKGROUND/#GRUB_BACKGROUND/' /etc/default/grub
 sed -i '/GRUB_THEME/s/GRUB_THEME/#GRUB_THEME/' /etc/default/grub
-sudo echo "GRUB_BACKGROUND=\"/usr/share/wallpapers/rickandmorty/rickandmorty.png\"" | sudo tee -a /etc/default/grub >/dev/null
+sudo echo "GRUB_BACKGROUND=\"/usr/share/wallpapers/rickandmorty/wallpapers/rickandmorty.png\"" | sudo tee -a /etc/default/grub >/dev/null
 update-grub
