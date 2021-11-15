@@ -9,7 +9,7 @@ gsettings set org.gnome.desktop.background picture-uri file:///usr/share/wallpap
 # Orchis theme
 git clone https://github.com/jacob-w-gable/Orchis-theme
 cd Orchis-theme
-./install.sh --theme purple
+./install.sh --theme all
 cp Orchis-GDM -r /usr/share/themes
 	# GTK
 gsettings set org.gnome.desktop.interface gtk-theme Orchis-purple-compact
@@ -33,8 +33,8 @@ cd plymouth
 cd ..
 
 # conky
-cp conkyrc ~/
-mv ~/conkyrc ~/.conkyrc
+mkdir ~/.config/conky
+cp conky.conf ~/.config/conky/
 
 # grub
 cp /etc/default/grub ~/grub.bak
