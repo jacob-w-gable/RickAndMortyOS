@@ -1,8 +1,6 @@
 #!/bin/bash
+# execute:
+# ./install.sh name
 
-git clone https://github.com/jacob-w-gable/Orchis-theme.git
-./Orchis-theme/install.sh --color purple
-./plymouth/install.sh
-cp Orchis-theme/Orchis-GDM /usr/share/themes
-git clone https://github.com/yeyushengfan258/Reversal-icon-theme
-./Reversal-icon-theme/install.sh
+cp $1 -r /usr/share/plymouth/themes
+plymouth-set-default-theme $1 -R
